@@ -1,0 +1,609 @@
+// out: styles.css, sourceMap: false, autoprefixer: last 5 versions, groupmedia: true
+@import "project.less";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 26px;
+    color: @header_text_gray;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: @text_color_gray;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+
+    font-family: "Segoe WP Light";
+}
+
+.header {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &__inner {
+        display: flex;
+        margin: 0 auto;
+        padding: 40px 0 30px 0;
+        justify-content: space-between;
+        align-items: baseline;
+        max-width: 1012px;
+    }
+
+    .logo {
+        width: 232px;
+        font-family: "Trebuchet MS";
+        font-size: 51px;
+
+        span:nth-child(1) {
+            color: #595959;
+        }
+
+        span:nth-child(3) {
+            color: #313131;
+        }
+
+        .logo__circle {
+            display: inline-block;
+            position: relative;
+            right: 2px;
+            top: 2px;
+            margin-right: 2px;
+            width: 29px;
+            height: 30px;
+            background-color: #6dd025;
+            border-radius: 50%;
+        }
+
+    }
+
+    .header__nav {
+        position: relative;
+        top: 5px;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        flex: 0 1 461px;
+
+        &__link {
+            padding: 10px 20px;
+            font-family: "Segoe WPN";
+            font-size: 23px;
+            color: #7b7c7b;
+            transition: .2s;
+
+            &:hover {
+                background: #373737;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+.wrapper {
+    .wrapper();
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1156px;
+}
+
+.wrapper__slider {
+    margin: 116px 0 0 180px;
+}
+
+.slider-description {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    height: 174px;
+    color: #5d5d5d;
+
+    &__slider-meta {
+        margin-top: 29px;
+    }
+
+    .slider-description__header {
+        font-size: 61px;
+
+        +span {
+            padding-top: 10px;
+            font-size: 47px;
+        }
+    }
+}
+
+.slider-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 11px 10px;
+    width: 204px;
+    background-color: #373737;
+
+    &__icon {
+        display: inline-block;
+        width: 33px;
+        height: 17px;
+        background: url(../img/icons/camera.png) no-repeat;
+    }
+
+    &__text {
+        font-family: "Segoe WPN";
+        font-size: 23px;
+        color: #ffffff;
+    }
+}
+
+.content-container {
+    display: flex;
+    flex: 1 0 auto;
+    max-width: 1023px;
+}
+
+.wrapper__content-container {
+    margin: 39px auto 0 auto;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+
+    &__article-block {
+        margin-top: 42px;
+    }
+}
+
+.sm-slider {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    max-width: 677px;
+    min-height: 244px;
+
+    &__image {
+        flex: 0 1 308px;
+    }
+
+    &-text-block {
+        flex: 0 1 342px;
+
+        .sm-slider-text-block__header {
+            margin-top: -8px;
+            font-size: 30px;
+            line-height: 37px;
+        }
+    }
+
+    &__text {
+        max-width: 318px;
+        margin-top: 12px;
+    }
+}
+
+.buttons {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 63px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31px;
+    height: 39px;
+
+    &-left {
+        background: #7c7c7c;
+
+        &__arrow {
+            .arrow(17px; -45deg);
+
+            margin-left: 6px;
+            border-top: 2px solid rgba(255, 255, 255, .55);
+            border-left: 2px solid rgba(255, 255, 255, .55);
+        }
+    }
+
+    &-right {
+        background: #989998;
+
+        &__arrow {
+            .arrow(17px; 135deg);
+
+            margin-right: 6px;
+            border-top: 2px solid rgba(255, 255, 255, .55);
+            border-left: 2px solid rgba(255, 255, 255, .55);
+        }
+    }
+}
+
+.article-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 680px;
+}
+
+.article-block__article {
+    margin-bottom: 51px;
+}
+
+.article {
+    width: 214px;
+
+    &__meta {
+        margin: 10px 0 10px 2px;
+    }
+}
+
+.content-container__advt-container {
+    margin: 0 23px;
+}
+
+.advt-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.advt-block-1 {
+    width: 319px;
+    height: 249px;
+    border: 1px solid #e1dddd;
+
+
+    &__header {
+        margin-top: 19px;
+        text-align: center;
+
+        span:nth-child(1) {
+            font-family: "Segoe WPN";
+            font-size: 21px;
+            color: #9ba08d;
+        }
+
+        span:nth-child(3) {
+            font-family: "Segoe WP Bold";
+            font-size: 39px;
+            color: #b8dc58;
+        }
+
+    }
+
+    &__images {
+        display: flex;
+        padding-top: 10px;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin: 0 auto;
+        width: 236px;
+    }
+
+    &__tablet {
+        width: 151px;
+    }
+
+    &__css {
+        position: relative;
+        top: -40px;
+        width: 56px;
+    }
+}
+
+.advt-container__advt-block-1 {
+    margin-bottom: 51px;
+}
+
+.advt-block-2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 319px;
+    height: 271px;
+    background-color: #86e7f0;
+
+    &__circle {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+    }
+
+    &__circle_white {
+        top: -20px;
+        width: 132px;
+        height: 132px;
+        background: #ffffff;
+        z-index: 1;
+    }
+
+    &__circle_pink {
+        top: -15px;
+        width: 121px;
+        height: 121px;
+        background: #ef809f;
+        z-index: 2;
+    }
+
+    &__number {
+        text-align: center;
+        color: #ffffff;
+    }
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 115px;
+        width: 100%;
+        color: #ffffff;
+    }
+
+    &__header {
+        font-family: "SimploW90-CapsDEMO";
+        font-size: 45px;
+    }
+
+    &__text {
+        margin: 5px auto 4px auto;
+        width: 240px;
+        font-family: "Optima LT Roman";
+        font-size: 23px;
+        line-height: 28.43px;
+    }
+}
+
+.num-12 {
+    font-family: "Segoe WPN";
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.week {
+    font-family: "Segoe WPN";
+    font-size: 22px;
+}
+
+.advt-button {
+    margin: 0 auto;
+    padding: 7px 0 5px 0;
+    width: 179px;
+    font-family: "Optima LT Roman";
+    font-size: 20px;
+    border-radius: 5px;
+    background: #58d1dc;
+    color: #ffffff;
+}
+
+.advt-container__advt-block-2 {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    flex: 0 0 auto;
+    height: 87px;
+    background: #393a39;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__text {
+        margin-left: 615px;
+        color: #ffffff;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 112px;
+}
+
+.footer__social-icons {
+    margin-right: 205px;
+}
+
+.icon::before {
+    content: '';
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+
+}
+
+.icon_f::before {
+    background: url(../img/icons/icon_f.png) no-repeat;
+}
+
+.icon_t::before {
+    background: url(../img/icons/icon_t.png) no-repeat;
+}
+
+.icon_y::before {
+    background: url(../img/icons/icon_y.png) no-repeat;
+}

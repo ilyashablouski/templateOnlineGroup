@@ -79,12 +79,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 article,
@@ -98,38 +98,596 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 26px;
+  color: #696161;
+}
+
+.text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #848484;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  font-family: "Segoe WP Light";
+}
+
+.header {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header__inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 40px 0 30px 0;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  max-width: 1012px;
+}
+
+.header .logo {
+  width: 232px;
+  font-family: "Trebuchet MS";
+  font-size: 51px;
+}
+
+.header .logo span:nth-child(1) {
+  color: #595959;
+}
+
+.header .logo span:nth-child(3) {
+  color: #313131;
+}
+
+.header .logo .logo__circle {
+  display: inline-block;
+  position: relative;
+  right: 2px;
+  top: 2px;
+  margin-right: 2px;
+  width: 29px;
+  height: 30px;
+  background-color: #6dd025;
+  border-radius: 50%;
+}
+
+.header .header__nav {
+  position: relative;
+  top: 5px;
+}
+
+.header .nav {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-flex: 0 1 461px;
+  -ms-flex: 0 1 461px;
+  flex: 0 1 461px;
+}
+
+.header .nav__link {
+  padding: 10px 20px;
+  font-family: "Segoe WPN";
+  font-size: 23px;
+  color: #7b7c7b;
+  transition: 0.2s;
+}
+
+.header .nav__link:hover {
+  background: #373737;
+  color: #ffffff;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.slider {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 1156px;
+}
+
+.wrapper__slider {
+  margin: 116px 0 0 180px;
+}
+
+.slider-description {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 0 1 auto;
+  -ms-flex: 0 1 auto;
+  flex: 0 1 auto;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 174px;
+  color: #5d5d5d;
+}
+
+.slider-description__slider-meta {
+  margin-top: 29px;
+}
+
+.slider-description .slider-description__header {
+  font-size: 61px;
+}
+
+.slider-description .slider-description__header + span {
+  padding-top: 10px;
+  font-size: 47px;
+}
+
+.slider-meta {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding: 11px 10px;
+  width: 204px;
+  background-color: #373737;
+}
+
+.slider-meta__icon {
+  display: inline-block;
+  width: 33px;
+  height: 17px;
+  background: url(../img/icons/camera.png) no-repeat;
+}
+
+.slider-meta__text {
+  font-family: "Segoe WPN";
+  font-size: 23px;
+  color: #ffffff;
+}
+
+.content-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  max-width: 1023px;
+}
+
+.wrapper__content-container {
+  margin: 39px auto 0 auto;
+}
+
+.content-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.content-block__article-block {
+  margin-top: 42px;
+}
+
+.sm-slider {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 677px;
+  min-height: 244px;
+}
+
+.sm-slider__image {
+  -webkit-flex: 0 1 308px;
+  -ms-flex: 0 1 308px;
+  flex: 0 1 308px;
+}
+
+.sm-slider-text-block {
+  -webkit-flex: 0 1 342px;
+  -ms-flex: 0 1 342px;
+  flex: 0 1 342px;
+}
+
+.sm-slider-text-block .sm-slider-text-block__header {
+  margin-top: -8px;
+  font-size: 30px;
+  line-height: 37px;
+}
+
+.sm-slider__text {
+  max-width: 318px;
+  margin-top: 12px;
+}
+
+.buttons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 63px;
+}
+
+.button {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 31px;
+  height: 39px;
+}
+
+.button-left {
+  background: #7c7c7c;
+}
+
+.button-left__arrow {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-left: 6px;
+  border-top: 2px solid rgba(255, 255, 255, 0.55);
+  border-left: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+.button-right {
+  background: #989998;
+}
+
+.button-right__arrow {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  margin-right: 6px;
+  border-top: 2px solid rgba(255, 255, 255, 0.55);
+  border-left: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+.article-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 680px;
+}
+
+.article-block__article {
+  margin-bottom: 51px;
+}
+
+.article {
+  width: 214px;
+}
+
+.article__meta {
+  margin: 10px 0 10px 2px;
+}
+
+.content-container__advt-container {
+  margin: 0 23px;
+}
+
+.advt-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.advt-block-1 {
+  width: 319px;
+  height: 249px;
+  border: 1px solid #e1dddd;
+}
+
+.advt-block-1__header {
+  margin-top: 19px;
+  text-align: center;
+}
+
+.advt-block-1__header span:nth-child(1) {
+  font-family: "Segoe WPN";
+  font-size: 21px;
+  color: #9ba08d;
+}
+
+.advt-block-1__header span:nth-child(3) {
+  font-family: "Segoe WP Bold";
+  font-size: 39px;
+  color: #b8dc58;
+}
+
+.advt-block-1__images {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  margin: 0 auto;
+  width: 236px;
+}
+
+.advt-block-1__tablet {
+  width: 151px;
+}
+
+.advt-block-1__css {
+  position: relative;
+  top: -40px;
+  width: 56px;
+}
+
+.advt-container__advt-block-1 {
+  margin-bottom: 51px;
+}
+
+.advt-block-2 {
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 319px;
+  height: 271px;
+  background-color: #86e7f0;
+}
+
+.advt-block-2__circle {
+  position: absolute;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.advt-block-2__circle_white {
+  top: -20px;
+  width: 132px;
+  height: 132px;
+  background: #ffffff;
+  z-index: 1;
+}
+
+.advt-block-2__circle_pink {
+  top: -15px;
+  width: 121px;
+  height: 121px;
+  background: #ef809f;
+  z-index: 2;
+}
+
+.advt-block-2__number {
+  text-align: center;
+  color: #ffffff;
+}
+
+.advt-block-2__text-block {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 115px;
+  width: 100%;
+  color: #ffffff;
+}
+
+.advt-block-2__header {
+  font-family: "SimploW90-CapsDEMO";
+  font-size: 45px;
+}
+
+.advt-block-2__text {
+  margin: 5px auto 4px auto;
+  width: 240px;
+  font-family: "Optima LT Roman";
+  font-size: 23px;
+  line-height: 28.43px;
+}
+
+.num-12 {
+  font-family: "Segoe WPN";
+  font-size: 72px;
+  font-weight: 900;
+}
+
+.week {
+  font-family: "Segoe WPN";
+  font-size: 22px;
+}
+
+.advt-button {
+  margin: 0 auto;
+  padding: 7px 0 5px 0;
+  width: 179px;
+  font-family: "Optima LT Roman";
+  font-size: 20px;
+  border-radius: 5px;
+  background: #58d1dc;
+  color: #ffffff;
+}
+
+.advt-container__advt-block-2 {
+  margin-bottom: 25px;
+}
+
+.footer {
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  height: 87px;
+  background: #393a39;
+}
+
+.footer__inner {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__text {
+  margin-left: 615px;
+  color: #ffffff;
+}
+
+.social-icons {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 112px;
+}
+
+.footer__social-icons {
+  margin-right: 205px;
+}
+
+.icon::before {
+  content: '';
+  display: inline-block;
+  width: 27px;
+  height: 27px;
+}
+
+.icon_f::before {
+  background: url(../img/icons/icon_f.png) no-repeat;
+}
+
+.icon_t::before {
+  background: url(../img/icons/icon_t.png) no-repeat;
+}
+
+.icon_y::before {
+  background: url(../img/icons/icon_y.png) no-repeat;
+}

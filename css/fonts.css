@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Segoe WP Light";
+    src: url('../fonts/Segoe WP Light/Segoe WP Light.eot');
+    src: url('../fonts/Segoe WP Light/Segoe WP Light.woff2') format('woff2'),
+        url('../fonts/Segoe WP Light/Segoe WP Light.woff') format('woff'),
+        url('../fonts/Segoe WP Light/Segoe WP Light.ttf') format('truetype'),
+        url('../fonts/Segoe WP Light/Segoe WP Light.svg#Segoe WP Light') format('svg'),
+        url('../fonts/Segoe WP Light/Segoe WP Light.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe WPN";
+    src: url('../fonts/Segoe WPN/Segoe WPN.eot');
+    src: url('../fonts/Segoe WPN/Segoe WPN.woff2') format('woff2'),
+        url('../fonts/Segoe WPN/Segoe WPN.woff') format('woff'),
+        url('../fonts/Segoe WPN/Segoe WPN.ttf') format('truetype'),
+        url('../fonts/Segoe WPN/Segoe WPN.svg#Segoe WPN') format('svg'),
+        url('../fonts/Segoe WPN/Segoe WPN.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SimploW90-CapsDEMO";
+    src: url("//db.onlinewebfonts.com/t/ec207960c4d1220573158271b6e96c29.eot");
+    src: url("//db.onlinewebfonts.com/t/ec207960c4d1220573158271b6e96c29.eot?#iefix") format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/ec207960c4d1220573158271b6e96c29.woff2") format("woff2"),
+    url("//db.onlinewebfonts.com/t/ec207960c4d1220573158271b6e96c29.woff") format("woff"),
+    url("//db.onlinewebfonts.com/t/ec207960c4d1220573158271b6e96c29.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/ec207960c4d1220573158271b6e96c29.svg#SimploW90-CapsDEMO") format("svg");
+}
+
+@font-face {
+    font-family: "Optima LT Roman";
+    src: url('../fonts/Optima LT Roman/Optima LT Roman.eot');
+    src: url('../fonts/Optima LT Roman/Optima LT Roman.woff2') format('woff2'),
+        url('../fonts/Optima LT Roman/Optima LT Roman.woff') format('woff'),
+        url('../fonts/Optima LT Roman/Optima LT Roman.ttf') format('truetype'),
+        url('../fonts/Optima LT Roman/Optima LT Roman.svg#Optima LT Roman') format('svg'),
+        url('../fonts/Optima LT Roman/Optima LT Roman.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Segoe WP Bold";
+    src: url('../fonts/Segoe WP Bold/Segoe WP Bold.eot');
+    src: url('../fonts/Segoe WP Bold/Segoe WP Bold.woff2') format('woff2'),
+        url('../fonts/Segoe WP Bold/Segoe WP Bold.woff') format('woff'),
+        url('../fonts/Segoe WP Bold/Segoe WP Bold.ttf') format('truetype'),
+        url('../fonts/Segoe WP Bold/Segoe WP Bold.svg#Segoe WP Bold') format('svg'),
+        url('../fonts/Segoe WP Bold/Segoe WP Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}

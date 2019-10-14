@@ -1,0 +1,17 @@
+//variables
+@text_color_gray: #848484;
+@header_text_gray: #696161;
+
+//mixins
+.wrapper() {
+    margin: 0 auto;
+    max-width: 1500px;
+}
+
+.arrow(@width_height; @deg) {
+    display: inline-block;
+    width: @width_height;
+    height: @width_height;
+    transform: rotate(@deg);
+}
+
