@@ -132,6 +132,15 @@ table {
 }
 
 * {
+    -webkit-touch-callout: none;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-user-select: none;
+}
+
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
@@ -143,6 +152,11 @@ img {
 a {
     text-decoration: none;
     cursor: pointer;
+}
+
+a,
+.input {
+    outline: none;
 }
 
 h2 {
@@ -176,7 +190,7 @@ body {
     &__inner {
         display: flex;
         margin: 0 auto;
-        padding: 40px 0 30px 0;
+        padding: 39px 0 30px 0;
         justify-content: space-between;
         align-items: baseline;
         max-width: 1012px;
@@ -229,6 +243,7 @@ body {
             &:hover {
                 background: #373737;
                 color: #ffffff;
+                transition: all 0.125s ease-in-out;
             }
         }
     }
@@ -294,7 +309,7 @@ body {
 .content-container {
     display: flex;
     flex: 1 0 auto;
-    max-width: 1023px;
+    max-width: 1030px;
 }
 
 .wrapper__content-container {
@@ -394,6 +409,11 @@ body {
 
     &__meta {
         margin: 10px 0 10px 2px;
+    }
+
+    p {
+        text-align: justify;
+        padding-right: 10px;
     }
 }
 
@@ -526,39 +546,98 @@ body {
     font-size: 22px;
 }
 
-.advt-button {
+.advt-block-2__advt-button {
     margin: 0 auto;
     padding: 7px 0 5px 0;
+}
+
+.advt-button {
     width: 179px;
     font-family: "Optima LT Roman";
     font-size: 20px;
     border-radius: 5px;
-    background: #58d1dc;
     color: #ffffff;
+
+    &_blue {
+        background: #58d1dc;
+    }
+
+    &_pink {
+        background: #bb4465;
+    }
 }
 
 .advt-container__advt-block-2 {
     margin-bottom: 25px;
 }
 
+.advt-block-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 319px;
+    height: 271px;
+    background: #393a39;
 
+    &__text-box {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        font-family: "Segoe WP Light";
+        color: #ffffff;
+    }
 
+    &__header {
+        text-align: center;
+        font-size: 27px;
+        text-transform: uppercase;
+    }
 
+    &__text {
+        margin: 12px auto 0px auto;
+        width: 251px;
+        text-align: justify;
+        line-height: 20px;
+    }
+}
 
+.feedback-form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 257px;
+}
 
+.name-field {
+    margin-bottom: 12px;
+    padding: 4px;
+    width: 100%;
+    font-size: 14px;
+    border: none;
+    outline: 0;
+    color: #787878;
+}
 
+.email-field {
+    &:extend(.name-field);
+    margin-bottom: 13px;
+}
 
+.submit-button {
+    border: none;
+    background-image: none;
+    box-shadow: none;
+}
 
+.feedback-form__submit-button {
+    padding: 4px 0 4px 0;
+}
 
-
-
-
-
-
-
-
-
-
+.advt-block-3__footer {
+    padding-bottom: 6px;
+    background: #bb4465;
+}
 
 .footer {
     flex: 0 0 auto;
